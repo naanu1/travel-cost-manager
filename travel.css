@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.bord{
+    border: 2px solid #fccb06;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    border-radius:40px ;
+    padding-bottom: 20px;
+}
+.container {
+  
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    padding-right: 60px;
+    align-self: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fccb06;
+    font-size: 2.2em;
+}
+
+.input-group, .stay-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.input-container.full-width {
+    flex: 0 0 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #fccb06;
+}
+
+button {
+    background-color: #fccb06;
+    color: #333;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fccb06;
+}
+
+#inputpermit {
+    margin-top: 20px;
+   
+    text-align: left;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 0 0 48%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #faf9f7;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #fccb06;
+}
+
+.card p {
+    font-size: 1em;
+    color: #fff;
+}
+#inputpermit{
+    padding-right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .input-container {
+        flex: 0 0 100%;
+    }
+
+    .card {
+        flex: 0 0 80%;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .card h2 {
+        font-size: 1.2em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+}

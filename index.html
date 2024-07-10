@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling Price Calculator</title>
+    <link rel="stylesheet" href="travel.css">
+    <script src="travel.js"></script>
+</head>
+<body>
+   <div class="container">
+    <h1>Travel Price Calculator</h1>
+    
+    <div class="input-group">
+       <div class="input-container">
+        <label for="kilo">Total Kilometers</label>
+        <input type="text" id="kilo"/>
+       </div>
+
+        <div class="input-container">
+            <label for="pkm">Price Per KM</label>
+            <input type="text" id="pkm"/>
+        </div>
+    </div>
+    
+
+    <div class="input-container">
+        <label for="members">Total Members</label>
+        <input type="number" id="members"/>
+    </div>
+
+    <div class="input-container">
+        <label for="days">Total Number of Days</label>
+        <input type="number" id="days"/>
+    </div>
+
+    <div class="input-group">
+        <div class="input-container">
+            <label for="bata">Driver Bata Price</label>
+            <input type="text" id="bata"/>
+        </div>
+        
+        <div class="input-container">
+            <label for="nbata">Number of Nights in Driving</label>
+            <input type="number" id="nbata"/>
+        </div>
+    </div>
+
+    <div class="input-container"> 
+        <label for="toll">Toll and Highway Price</label>
+        <input type="text" id="toll"/>
+    </div>
+
+    <div class="stay-price">
+      
+        <div class="input-container">
+            <label for="sday">No of Days in Hotelrooms</label>
+            <input type="number" id="sday"/>
+        </div>
+
+        <div class="input-container">
+            <label for="sprice">Price per day in Hotelroooms</label>
+            <input type="text" id="sprice"/>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <label for="food">Food Price per day per Person</label>
+        <input type="text" id="food"/>
+    </div>
+
+    <div class="input-container">
+        <label for="exp">Other expenses</label>
+        <input type="text" id="exp"/>
+    </div>
+
+  <div class="bord">
+    <div class="input-container">
+        <label for="permits">State Permits</label>
+        <select id="permits">
+            <option value="0">Select the number of board permits</option>
+            <option value="0">None</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+
+    <button class="submit-btn" onclick="permit()">Enter</button>
+    <div id="inputpermit"></div>
+  </div>
+
+    <button class="calculate-btn" onclick="calsum()">Calculate Price </button>
+    
+   </div>
+  
+</body>
+</html>
